@@ -1,3 +1,42 @@
+.blog-feed {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-card {
+  border: 1px solid #e6dada;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #fffdfc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #5f4b8b;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #d45d79;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
