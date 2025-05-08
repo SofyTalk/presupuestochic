@@ -1,32 +1,85 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Presupuesto Chic</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-</head>
-<body>
-  <header class="header">
-  <nav>
-    <ul class="nav-menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="#blog">Blog</a></li>
-    </ul>
-  </nav>
-</header>
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fef8f5;
+  color: #333;
+}
 
-  <section id="inicio" class="hero">
-    <img src="imagen-portada.jpg" alt="Presupuesto Chic" class="hero-img"/>
-    <h1>Presupuesto Chic</h1>
-    <p>Tips de ahorro con estilo para tu día a día 💅</p>
-  </section>
+/* MENÚ */
+.header {
+  background-color: #fdf6f0;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-  <input type="text" id="search" placeholder="Buscar tips o apps..." />
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
 
-  <section id="blog" class="feed"></section>
+.nav-menu a {
+  text-decoration: none;
+  color: #5f4b8b;
+  font-weight: bold;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+/* PORTADA */
+.hero {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero img {
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  color: #d45d79;
+  margin-top: 1rem;
+}
+
+/* BLOG FEED */
+.blog-feed {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-card {
+  border: 1px solid #e6dada;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #fffdfc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #5f4b8b;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #d45d79;
+  font-weight: bold;
+  text-decoration: none;
+}
